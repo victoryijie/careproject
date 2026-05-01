@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "victoryijie147/image"
-        APP_SERVER = "ec2-user@18.170.112.254"
+        APP_SERVER = "ec2-user@3.8.24.99"
     }
 
     stages {

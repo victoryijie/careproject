@@ -66,7 +66,9 @@ resource "aws_instance" "jenkins_server" {
               yum install jenkins -y
               systemctl enable jenkins
               systemctl start jenkins
-              # sudo usermod -aG docker jenkins
+              sudo usermod -aG docker jenkins
+              sudo systemctl restart jenkins
+
               EOF
 
   tags = {
